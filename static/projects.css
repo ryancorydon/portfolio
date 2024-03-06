@@ -1,0 +1,47 @@
+#projects {
+
+    padding: 40px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.projects-container {
+    text-align: center;
+}
+
+.projects-container h2 {
+    color: orange;
+    margin-bottom: 20px;
+}
+
+.projects-container p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: white; /* Set paragraph text color to white */
+}
+
+.projects-container a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+  /* Primary button color */
+    border: 2px solid orange;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+.projects-container a:hover {
+    background-color: orange;
+    border-color: orange;
+    color: #fff;
+}
+
+.project-images {
+    margin-top: 20px; /* Add space between button and images */
+}
+
+.project-images img {
+    width: 400px; /* Adjust image width */
+    margin: 0 10px; /* Add margin around images */
+}
