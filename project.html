@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryan Corydon - Home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/projects.css">
+    <link rel="stylesheet" href="static/homepage.css">
+    <link rel="stylesheet" href="static/nav.css">
+    <link rel="stylesheet" href="static/particle.css">
+
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+    <header>
+        <nav class="navbar navbar-expand-lg custom-navbar">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Only one nav with custom-navbar class -->
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="project.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="links.html">Links</a></li>
+                </ul>
+            </div>
+            <a href="https://www.linkedin.com/in/ryan-corydon-profile" target="_blank" class="emblem">
+                <i class="bx bxl-linkedin-square"></i>
+            </a>
+        </nav>
+    </header>
+
+    <main class="container mt-5">
+        <section id="projects">
+    <h2 class="text-center mb-4">Projects</h2>
+    <div class="project-row">
+        <div class="project-card">
+            <h3>Project Financials Dashboard</h3>
+            <p><strong>Role:</strong> Lead Developer (Project Takeover)</p>
+            <p><strong>Tools:</strong> SQL, Tableau, Tableau Pulse</p>
+
+            <h4>Description</h4>
+            <p>Dashboard providing comprehensive insights into project financials, accounts receivables, labor allocation, and job-specific metrics. Initially inherited this project after two years of incomplete development, with over 90% of the work remaining.</p>
+
+            <h4>Key Contributions</h4>
+            <ul>
+                <li>Developed 15+ complex SQL queries to extract and transform job-level data.</li>
+                <li>Created dynamic data sources and pipelines integrated directly with Tableau.</li>
+                <li>Designed and implemented 25+ interactive Tableau visualizations showing live job progress, budget burn, and cost forecasting.</li>
+                <li>Incorporated Tableau Pulse to alert Project Managers when key performance indicators fall below projections.</li>
+            </ul>
+
+            <h4>Outcome</h4>
+            <p>The dashboard is now a mission-critical tool used daily by Project Managers to monitor project health, identify risk early, and take proactive actions based on real-time KPIs.</p>
+
+            <h4>High-Level Analysis</h4>
+            <p>This dashboard modernized how project financial data is consumed within the organization. By integrating automated data refreshes and real-time alerting, it replaced legacy static reporting with a dynamic decision-making platform. Adoption across departments has improved communication, accelerated financial reviews, and reduced unnoticed budget variances. This project demonstrates strong end-to-end data ownership—from ETL to UX—and highlights the impact of self-service analytics at scale.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Service Dashboard Menu</h3>
+            <p><strong>Role:</strong> Designer & Developer</p>
+            <p><strong>Tools:</strong> Tableau, SQL, Tableau Server</p>
+
+            <h4>Description</h4>
+            <p>Redesigned the main Service Department’s reporting hub by creating a centralized Tableau dashboard that acts as a menu with tabbed navigation to over 40 service-related dashboards. The new solution consolidates reporting access into one interface with seamless navigation to specific reports through embedded links.</p>
+
+            <h4>Key Contributions</h4>
+            <ul>
+                <li>Architected a dashboard-driven menu system that replaced a static report list with interactive tabbed navigation.</li>
+                <li>Integrated direct hyperlinks to 40+ live dashboards, grouped by category for intuitive access and user flow.</li>
+                <li>Eliminated the need to publish and maintain 40 separate Tableau extract refresh schedules—now just one dashboard manages them all.</li>
+                <li>Worked closely with service managers to ensure menu usability aligned with their workflows and information needs.</li>
+            </ul>
+
+            <h4>Outcome</h4>
+            <p>The Service Dashboard Menu became the go-to portal for all service-related reporting needs. It simplified access, drastically reduced data maintenance overhead, and ensured faster insights delivery by consolidating views into one centralized interface.</p>
+
+            <h4>High-Level Analysis</h4>
+            <p>This project highlights a transformative approach to Tableau dashboard deployment by shifting from high-friction, decentralized reporting to a low-maintenance, scalable hub model. By building a single interface that links to all relevant service dashboards, we eliminated redundant publishing processes and improved dashboard discoverability. The efficiency gains from moving to a one-extract system not only saved significant server resources but also reduced operational risk from extract failures. This project is a model for optimizing Tableau architecture and maximizing user adoption through design thinking, smart navigation, and centralized control.</p>
+        </div>
+    </div>
+</section>
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="static/particles.js"></script>
+</body>
+</html>
