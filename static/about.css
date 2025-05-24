@@ -1,0 +1,81 @@
+/* Body padding to avoid text touching the edge */
+body {
+  padding: 20px;
+  margin: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Wrapper for the text and image */
+.about-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;  /* Reduced gap between text and image */
+  position: relative;
+  width: 100%;
+  padding: 10px;  /* Reduced padding */
+}
+
+/* Combined Text and Image Container with One Border */
+.about-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 3px solid crimson;  /* Slightly thinner border */
+  border-radius: 12px;  /* Slightly smaller border radius */
+  padding: 20px;  /* Reduced padding inside the box */
+  box-shadow: 0 0 15px crimson;  /* Slightly smaller shadow */
+  width: 100%;
+  max-width: 900px;  /* Reduced max width */
+  min-height: 300px;  /* Reduced minimum height */
+}
+
+/* Text Section Styling */
+.about-text {
+  flex: 1;
+  padding: 15px;  /* Reduced padding for the text */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 8px;  /* Reduced gap between text */
+  box-sizing: border-box;
+}
+
+/* Image Section Styling */
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Image Styling */
+.about-image img {
+  max-width: 90%;  /* Shrunk the image width */
+  height: auto;
+  object-fit: cover; /* Ensures image maintains aspect ratio */
+  border-radius: 8px; /* Reduced border radius */
+}
+
+/* Background Particles */
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  top: 0;
+  left: 0;
+}
+
+/* Ensures content stays above particles */
+.content-section,
+.container,
+header,
+nav {
+  position: relative;
+  z-index: 1;
+}
+
