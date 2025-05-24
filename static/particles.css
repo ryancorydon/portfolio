@@ -1,0 +1,20 @@
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: radial-gradient(circle, #111 0%, #000 100%);
+  z-index: -1;
+}
+
+canvas {
+  filter: drop-shadow(0 0 6px crimson);
+}
+
+
+window.addEventListener("scroll", () => {
+  const scrollY = window.scrollY;
+  const particlesEl = document.getElementById("particles-js");
+  particlesEl.style.transform = `translateY(${scrollY * 0.15}px) scale(1.01)`;
+});

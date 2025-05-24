@@ -1,101 +1,95 @@
-/* Updated CSS with Bootstrap classes */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #767676;
+  font-family: 'Roboto', sans-serif;
+  background-color: #0a0a0a;
+  color: #ffffff;
+  overflow-x: hidden; /* Prevents sideways scroll */
 }
 
-/* Navbar */
-.logo {
-    position: relative;
-    font-weight: 800;
-    font-family: 'Times New Roman', Times, serif;
-    top: 80px;
-    cursor: grab;
-    font-size: 40px;
-    color: #fff;
+/* Hero Section */
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 40px 15px;
 }
 
-.tabs {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    gap: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    list-style: none;
-    padding: 8px 15px;
-
-}
-
-.tabs a {
-    text-decoration: none;
-    font-size: 20px;
-    color: white;
-    margin: 0 0 0 18px;
-    transition: .45s all;
-    border: 2px solid transparent;
-    border-radius: 8px;
-}
-
-.tabs a:hover {
-    padding: 12px 20px;
-    border-color: orange;
-    color: #fff;
-}
-
-
-
-/* Content Section */
-.container {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    margin-top: 80px;
-}
-
+/* Text */
 .content-section {
-    margin: 20px;
-    color: #fff;
+  color: #fff;
 }
 
 .content-section span {
-    color: orange;
-    font-weight: 900;
+  color: red;
+  font-weight: 900;
 }
 
 .content-section p {
-    margin-bottom: 20px;
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 20px;
 }
 
-.image-container img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Projects Button */
+/* Button */
 .projects-button {
-    text-align: center;
+  text-align: center;
 }
 
 .projects-button a {
-    display: inline-block;
-    padding: 10px 20px;
-    text-decoration: none;
-    background-color: #767676;
-    color: white;
-    border: 2px solid orange;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  border: 2px solid red;
+  border-radius: 5px;
+  transition: 0.3s ease;
 }
 
 .projects-button a:hover {
-    background-color: orange;
-    border-color: orange;
-    color: #fff;
+  background-color: red;
+  color: #fff;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
+}
+
+/* Make sure nothing overflows horizontally */
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+.about-image img {
+  object-fit: cover;
+}
+
+/* Background Particles */
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  top: 0;
+  left: 0;
+}
+
+/* Ensures content stays above particles */
+.content-section,
+.container,
+header,
+nav {
+  position: relative;
+  z-index: 1;
 }
