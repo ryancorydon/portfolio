@@ -1,81 +1,60 @@
-/* Body padding to avoid text touching the edge */
-body {
-  padding: 20px;
-  margin: 0;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
-}
-
-/* Wrapper for the text and image */
 .about-wrapper {
+  min-height: calc(100vh - 68px);
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 10px;  /* Reduced gap between text and image */
-  position: relative;
-  width: 100%;
-  padding: 10px;  /* Reduced padding */
+  padding: 60px 24px;
 }
 
-/* Combined Text and Image Container with One Border */
 .about-box {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 48px;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.6);
-  border: 3px solid crimson;  /* Slightly thinner border */
-  border-radius: 12px;  /* Slightly smaller border radius */
-  padding: 20px;  /* Reduced padding inside the box */
-  box-shadow: 0 0 15px crimson;  /* Slightly smaller shadow */
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 48px;
   width: 100%;
-  max-width: 900px;  /* Reduced max width */
-  min-height: 300px;  /* Reduced minimum height */
 }
 
-/* Text Section Styling */
-.about-text {
-  flex: 1;
-  padding: 15px;  /* Reduced padding for the text */
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  gap: 8px;  /* Reduced gap between text */
-  box-sizing: border-box;
-}
-
-/* Image Section Styling */
-.about-image {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-
-/* Image Styling */
-.about-image img {
-  max-width: 90%;  /* Shrunk the image width */
-  height: auto;
-  object-fit: cover; /* Ensures image maintains aspect ratio */
-  border-radius: 8px; /* Reduced border radius */
-}
-
-/* Background Particles */
-#particles-js {
-  position: fixed;
+.profile-photo {
   width: 100%;
-  height: 100%;
-  z-index: 0;
-  top: 0;
-  left: 0;
+  max-width: 320px;
+  aspect-ratio: 1 / 1;
+  margin: 0 auto;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: var(--shadow-lg);
+  border: 4px solid var(--surface);
 }
 
-/* Ensures content stays above particles */
-.content-section,
-.container,
-header,
-nav {
-  position: relative;
-  z-index: 1;
+.about-text p {
+  color: var(--text-muted);
+  margin-bottom: 16px;
 }
 
+.about-text p:last-child {
+  margin-bottom: 0;
+}
+
+.about-text strong {
+  color: var(--text);
+}
+
+.about-text a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.about-text a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 760px) {
+  .about-box {
+    grid-template-columns: 1fr;
+    padding: 32px 24px;
+    text-align: center;
+  }
+}

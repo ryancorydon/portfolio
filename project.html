@@ -3,93 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ryan Corydon - Home</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="static/projects.css">
-    <link rel="stylesheet" href="static/homepage.css">
-    <link rel="stylesheet" href="static/nav.css">
-    <link rel="stylesheet" href="static/particle.css">
-
-
+    <title>Ryan Corydon - Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="static/base.css">
+    <link rel="stylesheet" href="static/projects.css">
 </head>
 <body>
-    <div id="particles-js"></div>
+    <div class="bg-decor" aria-hidden="true"></div>
+
     <header>
-        <nav class="navbar navbar-expand-lg custom-navbar">
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <!-- Only one nav with custom-navbar class -->
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
-                    <li class="nav-item"><a class="nav-link" href="project.html">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="links.html">Links</a></li>
+        <nav class="site-nav">
+            <div class="container">
+                <a href="home.html" class="brand">Ryan Corydon</a>
+                <ul class="nav-links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="project.html" class="active">Projects</a></li>
+                    <li><a href="links.html">Links</a></li>
                 </ul>
+                <div class="nav-social">
+                    <a href="https://github.com/ryan-corydon" target="_blank" rel="noopener" aria-label="GitHub">
+                        <i class="bx bxl-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ryan-corydon-profile" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <i class="bx bxl-linkedin-square"></i>
+                    </a>
+                </div>
             </div>
-            <a href="https://www.linkedin.com/in/ryan-corydon-profile" target="_blank" class="emblem">
-                <i class="bx bxl-linkedin-square"></i>
-            </a>
         </nav>
     </header>
 
-    <main class="container mt-5">
+    <main class="container">
         <section id="projects">
-    <h2 class="text-center mb-4">Projects</h2>
-    <div class="project-row">
-        <div class="project-card">
-            <h3>Project Financials Dashboard</h3>
-            <p><strong>Role:</strong> Lead Developer (Project Takeover)</p>
-            <p><strong>Tools:</strong> SQL, Tableau, Tableau Pulse</p>
+            <div class="section-heading">
+                <span class="eyebrow">Portfolio</span>
+                <h2 class="section-title">Projects</h2>
+            </div>
 
-            <h4>Description</h4>
-            <p>Dashboard providing comprehensive insights into project financials, accounts receivables, labor allocation, and job-specific metrics. Initially inherited this project after two years of incomplete development, with over 90% of the work remaining.</p>
+            <div class="project-row">
+                <div class="project-card">
+                    <h3>Oracle-to-Snowflake Migration &amp; BI Modernization</h3>
+                    <div class="project-meta">
+                        <span><strong>Role:</strong> Migration Lead</span>
+                        <span><strong>Tools:</strong> GitHub, Snowflake, Power BI</span>
+                        <span><strong>Timeline:</strong> 2025 – 2026</span>
+                    </div>
 
-            <h4>Key Contributions</h4>
-            <ul>
-                <li>Developed 15+ complex SQL queries to extract and transform job-level data.</li>
-                <li>Created dynamic data sources and pipelines integrated directly with Tableau.</li>
-                <li>Designed and implemented 25+ interactive Tableau visualizations showing live job progress, budget burn, and cost forecasting.</li>
-                <li>Incorporated Tableau Pulse to alert Project Managers when key performance indicators fall below projections.</li>
-            </ul>
+                    <h4>Description</h4>
+                    <p>Led a cross-team initiative to migrate the company's analytics codebase from Oracle to Snowflake while simultaneously modernizing the enterprise BI platform.</p>
 
-            <h4>Outcome</h4>
-            <p>The dashboard is now a mission-critical tool used daily by Project Managers to monitor project health, identify risk early, and take proactive actions based on real-time KPIs.</p>
+                    <h4>Key Contributions</h4>
+                    <ul>
+                        <li>Administered GitHub workflows for code reviews, branch validation, and controlled merges across engineering teams.</li>
+                        <li>Rebuilt 10+ Tableau dashboards into Power BI Service, consolidating the enterprise reporting layer onto a unified, cloud-native platform.</li>
+                        <li>Partnered with analytics engineers to validate transformed data sources and SQL logic, ensuring production-ready accuracy throughout the dual-track migration.</li>
+                    </ul>
 
-            <h4>High-Level Analysis</h4>
-            <p>This dashboard modernized how project financial data is consumed within the organization. By integrating automated data refreshes and real-time alerting, it replaced legacy static reporting with a dynamic decision-making platform. Adoption across departments has improved communication, accelerated financial reviews, and reduced unnoticed budget variances. This project demonstrates strong end-to-end data ownership—from ETL to UX—and highlights the impact of self-service analytics at scale.</p>
-        </div>
+                    <h4>Outcome</h4>
+                    <p>Unified the company's reporting layer onto Snowflake and Power BI, improving data governance and setting the foundation for scalable enterprise analytics.</p>
+                </div>
 
-        <div class="project-card">
-            <h3>Service Dashboard Menu</h3>
-            <p><strong>Role:</strong> Designer & Developer</p>
-            <p><strong>Tools:</strong> Tableau, SQL, Tableau Server</p>
+                <div class="project-card">
+                    <h3>WE2030 Executive KPI Dashboard</h3>
+                    <div class="project-meta">
+                        <span><strong>Role:</strong> BI Developer</span>
+                        <span><strong>Tools:</strong> Power BI, Snowflake</span>
+                        <span><strong>Timeline:</strong> Nov 2025 – Feb 2026</span>
+                    </div>
 
-            <h4>Description</h4>
-            <p>Redesigned the main Service Department’s reporting hub by creating a centralized Tableau dashboard that acts as a menu with tabbed navigation to over 40 service-related dashboards. The new solution consolidates reporting access into one interface with seamless navigation to specific reports through embedded links.</p>
+                    <h4>Description</h4>
+                    <p>Built an executive KPI dashboard in Power BI backed by Snowflake, presenting strategic company metrics directly to leadership.</p>
 
-            <h4>Key Contributions</h4>
-            <ul>
-                <li>Architected a dashboard-driven menu system that replaced a static report list with interactive tabbed navigation.</li>
-                <li>Integrated direct hyperlinks to 40+ live dashboards, grouped by category for intuitive access and user flow.</li>
-                <li>Eliminated the need to publish and maintain 40 separate Tableau extract refresh schedules—now just one dashboard manages them all.</li>
-                <li>Worked closely with service managers to ensure menu usability aligned with their workflows and information needs.</li>
-            </ul>
+                    <h4>Key Contributions</h4>
+                    <ul>
+                        <li>Collaborated with analytics engineers to validate source tables and SQL logic for accurate, production-ready metrics.</li>
+                        <li>Designed scalable, performance-optimized KPI models aligned to company targets, prioritizing clarity and consistency for enterprise reporting.</li>
+                        <li>Deployed via Power BI Service and the mobile app; presented insights directly to the CEO, CIO, CFO, and CPO to support strategic decision-making.</li>
+                    </ul>
 
-            <h4>Outcome</h4>
-            <p>The Service Dashboard Menu became the go-to portal for all service-related reporting needs. It simplified access, drastically reduced data maintenance overhead, and ensured faster insights delivery by consolidating views into one centralized interface.</p>
+                    <h4>Outcome</h4>
+                    <p>Delivered a trusted, mobile-accessible KPI dashboard that gives executive leadership real-time visibility into company performance.</p>
+                </div>
 
-            <h4>High-Level Analysis</h4>
-            <p>This project highlights a transformative approach to Tableau dashboard deployment by shifting from high-friction, decentralized reporting to a low-maintenance, scalable hub model. By building a single interface that links to all relevant service dashboards, we eliminated redundant publishing processes and improved dashboard discoverability. The efficiency gains from moving to a one-extract system not only saved significant server resources but also reduced operational risk from extract failures. This project is a model for optimizing Tableau architecture and maximizing user adoption through design thinking, smart navigation, and centralized control.</p>
-        </div>
-    </div>
-</section>
+                <div class="project-card">
+                    <h3>Service Dashboard Menu</h3>
+                    <div class="project-meta">
+                        <span><strong>Role:</strong> Designer & Developer</span>
+                        <span><strong>Tools:</strong> Tableau, SQL, Tableau Server</span>
+                    </div>
 
+                    <h4>Description</h4>
+                    <p>Redesigned the main Service Department's reporting hub by creating a centralized Tableau dashboard that acts as a menu with tabbed navigation to over 40 service-related dashboards.</p>
+
+                    <h4>Key Contributions</h4>
+                    <ul>
+                        <li>Architected a dashboard-driven menu system that replaced a static report list with interactive tabbed navigation.</li>
+                        <li>Integrated direct hyperlinks to 40+ live dashboards, grouped by category for intuitive access and user flow.</li>
+                        <li>Eliminated the need to publish and maintain 40 separate Tableau extract refresh schedules — now just one dashboard manages them all.</li>
+                    </ul>
+
+                    <h4>Outcome</h4>
+                    <p>Became the go-to portal for all service-related reporting needs, drastically reducing data maintenance overhead and speeding up insight delivery.</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Project Manager Dashboard</h3>
+                    <div class="project-meta">
+                        <span><strong>Role:</strong> Lead Developer (Project Takeover)</span>
+                        <span><strong>Tools:</strong> Tableau, Power BI, SQL</span>
+                        <span><strong>Timeline:</strong> Nov 2023 – Apr 2024</span>
+                    </div>
+
+                    <h4>Description</h4>
+                    <p>Took ownership of a long-stalled financial dashboard, inherited after two years of incomplete development, and rebuilt it into a mission-critical daily-use tool.</p>
+
+                    <h4>Key Contributions</h4>
+                    <ul>
+                        <li>Developed 15+ SQL queries and production data sources to power Tableau reporting.</li>
+                        <li>Built 25+ interactive visualizations tracking job-level financials, accounts receivable, labor, and project performance.</li>
+                    </ul>
+
+                    <h4>Outcome</h4>
+                    <p>Delivered a trusted daily-use data product for Project Managers, improving cost transparency and accelerating data-driven decisions.</p>
+                </div>
+
+                <div class="project-card project-card-upcoming">
+                    <div class="upcoming-badge">Coming Soon</div>
+                    <h3>New Project — In the Works</h3>
+                    <p>I'm kicking off a new project soon. Check back here for details as it takes shape.</p>
+                </div>
+            </div>
+        </section>
     </main>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <script src="static/particles.js"></script>
 </body>
 </html>
