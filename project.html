@@ -85,6 +85,41 @@
                 </div>
 
                 <div class="project-card">
+                    <h3>2026 Chicago Cubs Season Dashboard</h3>
+                    <div class="project-meta">
+                        <span><strong>Role:</strong> Independent Project</span>
+                        <span><strong>Tools:</strong> SQL, Python, Power BI</span>
+                        <span><strong>Timeline:</strong> 2026</span>
+                    </div>
+
+                    <h4>Description</h4>
+                    <p>A live analytics dashboard tracking the Chicago Cubs' 2026 season — real-time standings, advanced player ratings, and a Monte Carlo-simulated probability of winning the division and World Series, all built on data pulled directly from the MLB Stats API.</p>
+
+                    <h4>Key Contributions</h4>
+                    <ul>
+                        <li>Built a SQLite pipeline computing Pythagorean win expectancy and division/league standings from live MLB Stats API and pybaseball data.</li>
+                        <li>Wrote a Monte Carlo simulator in Python that plays out the remaining regular season and playoff bracket thousands of times to estimate division, playoff, and World Series odds.</li>
+                        <li>Designed a 3-page Power BI dashboard — including a Player Ratings page with a bookmark-driven toggle to swap between hitters and pitchers on the same page — surfacing WAR, OPS+, ERA+, and FIP alongside plain-English definitions.</li>
+                    </ul>
+
+                    <h4>Outcome</h4>
+                    <p>An always-current tracker that updates as the 2026 season unfolds, showing at a glance whether the Cubs are outperforming their underlying run differential and how their playoff odds are trending.</p>
+
+                    <div class="project-gallery">
+                        <a href="static/cubs-season-overview.png" target="_blank" rel="noopener">
+                            <img src="static/cubs-season-overview.png" alt="Season Overview dashboard page">
+                        </a>
+                        <a href="static/cubs-player-ratings.png" target="_blank" rel="noopener">
+                            <img src="static/cubs-player-ratings.png" alt="Player Ratings dashboard page">
+                        </a>
+                        <a href="static/cubs-odds-tracker.png" target="_blank" rel="noopener">
+                            <img src="static/cubs-odds-tracker.png" alt="Odds Tracker dashboard page">
+                        </a>
+                    </div>
+                    <p class="project-gallery-caption">Click a screenshot to view full size. Player Ratings includes a Batters/Pitchers toggle button so both stat tables don't have to compete for the same screen.</p>
+                </div>
+
+                <div class="project-card">
                     <h3>Oracle-to-Snowflake Migration &amp; BI Modernization</h3>
                     <div class="project-meta">
                         <span><strong>Role:</strong> Migration Lead</span>
