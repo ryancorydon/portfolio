@@ -88,6 +88,43 @@
   color: var(--accent);
 }
 
+.project-card-featured {
+  border: 1px solid var(--accent);
+  box-shadow: 0 0 0 1px var(--accent), var(--shadow);
+}
+
+.featured-badge {
+  display: inline-block;
+  padding: 4px 14px;
+  margin-bottom: 14px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.project-link i {
+  font-size: 18px;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
 .project-card-upcoming {
   display: flex;
   flex-direction: column;
